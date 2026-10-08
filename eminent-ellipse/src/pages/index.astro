@@ -21,8 +21,8 @@ import '../styles/global.css';
 			content="A personal introduction to Hong Chen, including education, work experience, research, publications, training, and conferences."
 		/>
 		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<title>Hong Chen | Personal Bio</title>
 	</head>
 	<body>
