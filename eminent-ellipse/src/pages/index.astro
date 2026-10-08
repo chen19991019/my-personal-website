@@ -1,9 +1,12 @@
 ---
+import Activities from '../components/Activities.astro';
 import Background from '../components/Background.astro';
 import Education from '../components/Education.astro';
 import Footer from '../components/Footer.astro';
 import Intro from '../components/Intro.astro';
+import Publications from '../components/Publications.astro';
 import Projects from '../components/Projects.astro';
+import WorkExperience from '../components/WorkExperience.astro';
 import '../styles/global.css';
 ---
 
@@ -15,7 +18,7 @@ import '../styles/global.css';
 		<meta name="theme-color" content="#edf2f1" />
 		<meta
 			name="description"
-			content="A personal introduction to Hong Chen, their background, education, and projects."
+			content="A personal introduction to Hong Chen, including education, work experience, research, publications, training, and conferences."
 		/>
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -28,9 +31,11 @@ import '../styles/global.css';
 			<header class="site-header">
 				<a class="wordmark" href="#top" aria-label="Hong Chen, back to top">HC</a>
 				<nav aria-label="Main navigation">
-					<a href="#background">Background</a>
 					<a href="#education">Education</a>
-					<a href="#projects">Projects</a>
+					<a href="#work-experience">Work Experience</a>
+					<a href="#research-projects">Research Projects</a>
+					<a href="#publications">Publications</a>
+					<a href="#training-and-conference">Training and Conference</a>
 				</nav>
 			</header>
 
@@ -38,7 +43,10 @@ import '../styles/global.css';
 				<Intro />
 				<Background />
 				<Education />
+				<WorkExperience />
 				<Projects />
+				<Publications />
+				<Activities />
 			</main>
 
 			<Footer />
